@@ -61,7 +61,7 @@ export default function  HomeClient() {
           <div className="flex justify-center items-center mb-12 w-full">
             <div className="relative w-full max-w-[50vw] h-auto aspect-[970/540]"> 
               <Image
-                src="/img/name.gif"
+                src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768625948/NAME_r3pizw.gif"
                 fill
                 alt="LUMENAE - Nombre de la marca"
                 className="opacity-50 object-contain"
@@ -77,7 +77,7 @@ export default function  HomeClient() {
               className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110">
               <div className="p-3 rounded-full group-hover:bg-white/5 transition-all duration-300">
                 <Image
-                  src="/logos/INSTAGRAM_LOGO.png"
+                  src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768625982/INSTAGRAM_LOGO_zt2ncw.png"
                   width={40}
                   height={40}
                   alt="Instagram"
@@ -90,7 +90,7 @@ export default function  HomeClient() {
               className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110">
               <div className="p-3 rounded-full group-hover:bg-white/5 transition-all duration-300">
                 <Image
-                  src="/logos/GMAIL_LOGO.png"
+                  src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768625982/GMAIL_LOGO_ildlpf.png"
                   width={40}
                   height={40}
                   alt="Gmail"
@@ -103,7 +103,7 @@ export default function  HomeClient() {
               className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110">
               <div className="p-3 rounded-full group-hover:bg-white/5 transition-all duration-300">
                 <Image
-                  src="/logos/TUMBLR_LOGO.png"
+                  src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768625982/TUMBLR_LOGO_j0eah6.png"
                   width={40}
                   height={40}
                   alt="Tumblr"
@@ -116,7 +116,7 @@ export default function  HomeClient() {
               className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110">
               <div className="p-3 rounded-full group-hover:bg-white/5 transition-all duration-300">
                 <Image
-                  src="/logos/YOUTUBE_LOGO.png"
+                  src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768625982/YOUTUBE_LOGO_kscmyr.png"
                   width={40}
                   height={40}
                   alt="YouTube"

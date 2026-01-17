@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState(1);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -81,98 +80,39 @@ export default function Home() {
         {/* Diseño en 2 columnas: Imagen+Sobre mí | Formulario */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           
-          {/* COLUMNA 1: Imagen + Sobre mí en el mismo cuadro */}
+          {/* COLUMNA 1: Imagen + Sobre mí */}
           <div className="lg:col-span-1">
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 sm:p-5 md:p-6">
               
-              {/* Contenedor para imagen y texto lado a lado */}
-              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                
-                {/* Imagen */}
-                <div className="md:w-2/5 flex-shrink-0">
-                  <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-full md:h-auto md:aspect-square mx-auto md:mx-0 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
-                    <Image
-                      src="/img/profile.jpg"
-                      alt="Lumenae"
-                      fill
-                      className="object-cover"
-                      priority
-                    />
-                  </div>
-
-                </div>
-                
-                {/* Texto "Sobre mí" */}
-                <div className="md:w-3/5 flex flex-col">
-                  <h2 className="text-lg sm:text-xl font-normal text-gray-900 mb-3 md:mb-4">
-                    Sobre mí
-                  </h2>
-                  
-                  <div className="space-y-3 flex-1">
-                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                      Soy artista digital independiente, estudiante de Ingeniería Informática. Trabajo con <span className="text-red-500 font-medium">ilustración digital, animación 2D y desarrollo de videojuegos</span>.
-                    </p>
-                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                      Mi enfoque es tanto creativo como técnico, explorando constantemente nuevas herramientas y metodologías.
-                    </p>
-                  </div>
+              {/* Imagen circular arriba */}
+              <div className="flex justify-center mb-6">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden">
+                  <Image
+                    src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768625982/PROFILE_cprg0l.png"
+                    alt="Lumenae"
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+                  />
                 </div>
               </div>
-              
-              {/* Navegación en la parte inferior del cuadro */}
-              <div className="mt-6 pt-5 border-t border-gray-100">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div className="flex items-center justify-center sm:justify-start gap-3">
-                    <button
-                      onClick={() => setCurrentPage(1)}
-                      className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${
-                        currentPage === 1 
-                          ? "bg-red-50 text-red-500 border border-red-200" 
-                          : "text-gray-500 hover:text-red-500 hover:bg-red-50"
-                      }`}
-                    >
-                      Presentación
-                    </button>
-                    
-                    <button
-                      onClick={() => setCurrentPage(2)}
-                      className={`px-4 py-2 text-sm rounded-lg transition-all duration-200 ${
-                        currentPage === 2 
-                          ? "bg-red-50 text-red-500 border border-red-200" 
-                          : "text-gray-500 hover:text-red-500 hover:bg-red-50"
-                      }`}
-                    >
-                      Herramientas
-                    </button>
-                  </div>
-                  
-                  <div className="flex items-center justify-center gap-2">
-                    <div className={`w-2.5 h-2.5 rounded-full ${currentPage === 1 ? 'bg-red-500' : 'bg-gray-300'}`}></div>
-                    <div className={`w-2.5 h-2.5 rounded-full ${currentPage === 2 ? 'bg-red-500' : 'bg-gray-300'}`}></div>
-                  </div>
-                </div>
                 
-                {/* Contenido adicional para página 2 */}
-                {currentPage === 2 && (
-                  <div className="mt-4 p-4 bg-gray-50 border border-gray-100 rounded-lg animate-fadeIn">
-                    <div className="space-y-3">
-                      <div>
-                        <h3 className="text-base font-medium text-gray-800 mb-1">Animación 2D:</h3>
-                        <p className="text-gray-700 text-sm">
-                          Clip Studio Paint • Toon Boom • Adobe Suite
-                        </p>
-                      </div>
-                      <div>
-                        <h3 className="text-base font-medium text-gray-800 mb-1">Programación:</h3>
-                        <p className="text-gray-700 text-sm">
-                          C#, Python • VS Code • Unity, Godot
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
+              {/* Texto "Sobre mí" debajo */}
+              <div className="text-center">
+                <h2 className="text-lg sm:text-xl font-normal text-gray-900 mb-4">
+                  Sobre mí
+                </h2>
+                
+                <div className="space-y-4">
+                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                    Soy artista digital independiente, estudiante de Ingeniería Informática. Trabajo con <span className="text-red-500 font-medium">ilustración digital, animación 2D y desarrollo de videojuegos</span>.
+                  </p>
+                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                    Mi enfoque es tanto creativo como técnico, explorando constantemente nuevas herramientas y metodologías.
+                  </p>
+                </div>
               </div>
-              
             </div>
           </div>
 
@@ -189,7 +129,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4 flex-1">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">
                       Nombre
@@ -220,7 +160,7 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="flex-1">
+                  <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">
                       Mensaje
                     </label>
@@ -230,7 +170,7 @@ export default function Home() {
                       onChange={handleInputChange}
                       required
                       rows="4"
-                      className="w-full h-full min-h-[120px] px-3 py-2 text-sm bg-white border border-gray-300 rounded focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-all resize-none"
+                      className="w-full px-3 py-2 text-sm bg-white border border-gray-300 rounded focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-all resize-none"
                       placeholder="Escribe tu mensaje..."
                     />
                   </div>
