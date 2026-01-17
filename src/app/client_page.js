@@ -46,7 +46,7 @@ export default function  HomeClient() {
         <div className="absolute inset-0">
           <div className="relative h-full w-full" style={{ top: '-150px' }}>
           <Image
-            src="/img/t.png"
+            src="https://res.cloudinary.com/dvlvkn1vy/image/upload/v1768627699/t_rsggaa.png"
             fill
             className="object-cover opacity-50"
             alt="Overlay texture"
