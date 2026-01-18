@@ -220,7 +220,7 @@ export default function HomeClient() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <span className="relative z-10">ILLUSTRATIONS</span>
+                    <span className="relative z-10">ILLUSTRACIÓN</span>
                     {activeTab === "illustrations" && (
                       <motion.div
                         layoutId="activeTab"
@@ -246,7 +246,7 @@ export default function HomeClient() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <span className="relative z-10">ANIMATIONS</span>
+                    <span className="relative z-10">ANIMACIÓN</span>
                     {activeTab === "animations" && (
                       <motion.div
                         layoutId="activeTab"
