@@ -73,7 +73,7 @@ export default function Home() {
             Alexandra / Lumenae
           </h1>
           <p className="text-gray-600 text-sm sm:text-base">
-            Artista digital • Estudiante de Ingeniería Informática
+            Artista digital y estudiante de Ingeniería Informática
           </p>
         </div>
 
@@ -106,10 +106,10 @@ export default function Home() {
                 
                 <div className="space-y-4">
                   <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Soy artista digital independiente, estudiante de Ingeniería Informática. Trabajo con <span className="text-red-500 font-medium">ilustración digital, animación 2D y desarrollo de videojuegos</span>.
+                    Artista digital independiente y estudiante de Ingeniería Informática. Trabajo en <span className="text-red-500 font-medium">ilustración digital</span>, <span className="text-red-500 font-medium">animación 2D</span> y <span className="text-red-500 font-medium">desarrollo de videojuegos</span>.
                   </p>
                   <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Mi enfoque es tanto creativo como técnico, explorando constantemente nuevas herramientas y metodologías.
+                    Combino un enfoque creativo y técnico, con interés constante por nuevas herramientas y procesos.
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function Home() {
                     Contacto
                   </h2>
                   <p className="text-gray-600 text-sm mb-4">
-                    Escríbeme directamente o usa el formulario
+                    Puedes contactarme directamente o mediante el formulario
                   </p>
                 </div>
 
@@ -214,8 +214,8 @@ export default function Home() {
                           <span className="text-white text-xs">✓</span>
                         </div>
                         <div>
-                          <p className="text-green-700 font-medium">¡Mensaje enviado!</p>
-                          <p className="text-green-600 text-xs">Te responderé pronto</p>
+                          <p className="text-green-700 font-medium">Mensaje enviado</p>
+                          <p className="text-green-600 text-xs">Gracias por escribir</p>
                         </div>
                       </div>
                     </div>
@@ -243,7 +243,7 @@ export default function Home() {
         {/* Footer info */}
         <div className="mt-8 pt-6 border-t border-gray-100 text-center">
           <p className="text-gray-500 text-sm">
-            Sígueme en redes sociales como <span className="text-red-500 font-medium">@lumen4e</span>
+            Redes sociales: <span className="text-red-500 font-medium">@lumen4e</span>
           </p>
         </div>
       </div>
